@@ -1,12 +1,8 @@
 from flask import Flask,render_template,request,flash,redirect,url_for,session
 import xlrd
-from flask_mysqldb import MySQL
+
 app = Flask(__name__)
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'root'
-app.config['MYSQL_DB'] = 'JEE'
-mysql=MySQL(app)
+
 app.secret_key='qwertyuiopasdfgghh'
 def Sort1(sub_li):
     l = len(sub_li)
